@@ -1,0 +1,15 @@
+﻿@using SportStore.Domain.Entityes;
+@model IEnumerable<Product>
+@{
+    ViewBag.Title = "Product List";
+}
+
+<h2>List</h2>
+@foreach(Product prd in Model)
+{
+    <div class="item">
+        <h3>@prd.Name</h3> 
+        @prd.Discription
+        <h1>@prd.Price</h1>
+    </div>
+}
